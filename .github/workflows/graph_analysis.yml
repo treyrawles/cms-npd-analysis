@@ -1,0 +1,102 @@
+name: CMS NPD Graph Linkage Analysis
+
+on:
+  workflow_dispatch:
+    inputs:
+      confirm:
+        description: 'Type "run" to confirm (downloads 2.8GB of data)'
+        required: true
+        default: 'run'
+  push:
+    branches: [ main ]
+    paths:
+      - 'analysis/graph_linkage.py'
+      - '.github/workflows/graph_analysis.yml'
+
+jobs:
+  analyze:
+    name: Full Cross-Resource Graph Linkage
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install zstandard
+
+      - name: Show disk space before download
+        run: df -h
+
+      - name: Download CMS NPD data files
+        run: |
+          mkdir -p data
+          BASE="https://directory.cms.gov/downloads"
+          echo "Downloading all 6 CMS NPD resource files..."
+          
+          # Download in parallel
+          wget -q --show-progress "$BASE/Practitioner.ndjson.zst" -O data/Practitioner.ndjson.zst &
+          wget -q --show-progress "$BASE/PractitionerRole.ndjson.zst" -O data/PractitionerRole.ndjson.zst &
+          wget -q --show-progress "$BASE/Organization.ndjson.zst" -O data/Organization.ndjson.zst &
+          wget -q --show-progress "$BASE/Location.ndjson.zst" -O data/Location.ndjson.zst &
+          wget -q --show-progress "$BASE/Endpoint.ndjson.zst" -O data/Endpoint.ndjson.zst &
+          wget -q --show-progress "$BASE/OrganizationAffiliation.ndjson.zst" -O data/OrganizationAffiliation.ndjson.zst &
+          
+          # Wait for all downloads
+          wait
+          
+          echo "Download complete. File sizes:"
+          ls -lh data/
+
+      - name: Show disk space after download
+        run: df -h
+
+      - name: Run graph linkage analysis
+        run: |
+          mkdir -p results
+          python analysis/graph_linkage.py
+
+      - name: Show results summary
+        run: |
+          echo "=== GRAPH STATS SUMMARY ==="
+          python3 -c "
+          import json
+          with open('results/graph_stats.json') as f:
+              d = json.load(f)
+          s = d['summary']
+          print(f'Total practitioners: {s[\"total_practitioners\"]:,}')
+          print(f'% linked to org: {s[\"pct_linked_to_org\"]}%')
+          print(f'% linked to location: {s[\"pct_linked_to_location\"]}%')
+          print(f'% with endpoint: {s[\"pct_with_endpoint\"]}%')
+          print(f'% full chain: {s[\"pct_full_chain\"]}%')
+          print()
+          print('Top 10 Organizations by Practitioner Count:')
+          for i, org in enumerate(d['top_50_organizations'][:10], 1):
+              print(f'  {i}. {org[\"name\"]}: {org[\"practitioner_count\"]:,}')
+          print()
+          cc = d['chain_completeness']
+          print(f'Full chain (org+loc+endpoint): {cc[\"full_chain_org_loc_endpoint\"]:,} ({cc[\"full_chain_pct\"]}%)')
+          print(f'Org+Loc only: {cc[\"org_and_loc_no_endpoint\"]:,}')
+          print(f'No chain: {cc[\"no_chain\"]:,}')
+          "
+
+      - name: Upload graph_stats.json as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: graph-linkage-results
+          path: results/graph_stats.json
+          retention-days: 90
+
+      - name: Upload full results directory
+        uses: actions/upload-artifact@v4
+        with:
+          name: full-analysis-results
+          path: results/
+          retention-days: 90
