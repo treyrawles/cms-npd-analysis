@@ -1,0 +1,579 @@
+{
+  "practitioner_total": 7441212,
+  "practitioner_npi_count": 0,
+  "role_total": 7180732,
+  "roles_with_practitioner": 7180732,
+  "roles_with_organization": 7035847,
+  "roles_with_location": 5544394,
+  "roles_with_all_three": 5544394,
+  "inactive_roles": 3220444,
+  "top_specialties_from_roles": {
+    "PRACTITIONER - NURSE PRACTITIONER": 657173,
+    "PRACTITIONER - INTERNAL MEDICINE": 236443,
+    "PRACTITIONER - CERTIFIED REGISTERED NURSE ANESTHETIST (CRNA)": 202368,
+    "PRACTITIONER - FAMILY PRACTICE": 199843,
+    "PRACTITIONER - EMERGENCY MEDICINE": 187946,
+    "PRACTITIONER - DIAGNOSTIC RADIOLOGY": 175214,
+    "PRACTITIONER - PHYSICAL THERAPIST IN PRIVATE PRACTICE": 166490,
+    "PRACTITIONER - ANESTHESIOLOGY": 114989,
+    "PRACTITIONER - CLINICAL SOCIAL WORKER": 108035,
+    "PRACTITIONER - PEDIATRIC MEDICINE": 82932,
+    "PRACTITIONER - OBSTETRICS/GYNECOLOGY": 81120,
+    "PRACTITIONER - PSYCHIATRY": 71574,
+    "14-E2": 67066,
+    "PRACTITIONER - OPTOMETRY": 63162,
+    "PRACTITIONER - HOSPITALIST": 60175,
+    "PRACTITIONER - CARDIOVASCULAR DISEASE (CARDIOLOGY)": 51234,
+    "PRACTITIONER - GENERAL SURGERY": 50331,
+    "PRACTITIONER - NEUROLOGY": 47342,
+    "PRACTITIONER - ORTHOPEDIC SURGERY": 42741,
+    "PRACTITIONER - CHIROPRACTIC": 41712,
+    "PRACTITIONER - CLINICAL PSYCHOLOGIST": 36985,
+    "PRACTITIONER - OCCUPATIONAL THERAPIST IN PRIVATE PRACTICE": 32701,
+    "PRACTITIONER - OPHTHALMOLOGY": 31106,
+    "PRACTITIONER - GASTROENTEROLOGY": 30753,
+    "PRACTITIONER - PATHOLOGY": 26279,
+    "PRACTITIONER - PODIATRY": 25374,
+    "PRACTITIONER - PULMONARY DISEASE": 25114,
+    "PRACTITIONER - UROLOGY": 21249,
+    "PRACTITIONER - DERMATOLOGY": 20959,
+    "PRACTITIONER - HEMATOLOGY/ONCOLOGY": 19597
+  },
+  "practitioners_with_org_link": 2135944,
+  "practitioners_with_location_link": 2064446,
+  "practitioners_no_org_link": 5305647,
+  "practitioners_no_location_link": 5376769,
+  "orgs_per_practitioner_dist": {
+    "1": 804486,
+    "2": 454391,
+    "3": 297859,
+    "4": 193495,
+    "5": 122743,
+    "6": 78796,
+    "7": 51403,
+    "8": 34730,
+    "9": 23930,
+    "10": 16949,
+    "11": 12152,
+    "12": 8834,
+    "13": 6956,
+    "14": 5306,
+    "15": 3998,
+    "16": 3160,
+    "17": 2592,
+    "18": 2010,
+    "19": 1653,
+    "20": 1458
+  },
+  "locations_per_practitioner_dist": {
+    "1": 148800,
+    "2": 249822,
+    "3": 297204,
+    "4": 301128,
+    "5": 246090,
+    "6": 189236,
+    "7": 143511,
+    "8": 107751,
+    "9": 80043,
+    "10": 60478,
+    "11": 45791,
+    "12": 34400,
+    "13": 27069,
+    "14": 21306,
+    "15": 16999,
+    "16": 13990,
+    "17": 11609,
+    "18": 9522,
+    "19": 7622,
+    "20": 6371
+  },
+  "unique_orgs_with_practitioners": 386873,
+  "top_100_org_ids_by_pract_count": {
+    "Organization-1073606299": 20202,
+    "Organization-1770515280": 13895,
+    "Organization-1053688572": 10923,
+    "Organization-1245845932": 9820,
+    "Organization-1679525919": 8826,
+    "Organization-1285826438": 7989,
+    "Organization-1619935004": 7210,
+    "Organization-1922074434": 6989,
+    "Organization-1750845863": 6978,
+    "Organization-1063525152": 6656,
+    "Organization-1023049236": 6506,
+    "Organization-1801874573": 6398,
+    "Organization-1083708226": 6243,
+    "Organization-1477624104": 5767,
+    "Organization-1962461889": 5653,
+    "Organization-1245403567": 5472,
+    "Organization-1346235314": 5466,
+    "Organization-1497701882": 5443,
+    "Organization-1861578973": 5408,
+    "Organization-1700824455": 5299,
+    "Organization-1023041159": 5248,
+    "Organization-1942270566": 5248,
+    "Organization-1396798229": 5218,
+    "Organization-1427271378": 5207,
+    "Organization-1316979834": 5194,
+    "Organization-1013950807": 5170,
+    "Organization-1558097824": 5101,
+    "Organization-1013994359": 4942,
+    "Organization-1104202761": 4933,
+    "Organization-1184046187": 4894,
+    "Organization-1437292927": 4887,
+    "Organization-1326893777": 4852,
+    "Organization-1033535497": 4846,
+    "Organization-1093768723": 4725,
+    "Organization-1538151428": 4701,
+    "Organization-1699720086": 4688,
+    "Organization-1033149844": 4434,
+    "Organization-1508390014": 4368,
+    "Organization-1366493868": 4365,
+    "Organization-1922008549": 4361,
+    "Organization-1417907940": 4331,
+    "Organization-1497766638": 4275,
+    "Organization-1548208564": 4254,
+    "Organization-1952320061": 4217,
+    "Organization-1669499414": 4209,
+    "Organization-1205822236": 4132,
+    "Organization-1487928891": 4076,
+    "Organization-1003803032": 4069,
+    "Organization-1003878539": 3867,
+    "Organization-1104334465": 3851,
+    "Organization-1063463768": 3850,
+    "Organization-1205553369": 3841,
+    "Organization-1508266347": 3801,
+    "Organization-1558664003": 3800,
+    "Organization-1295272342": 3780,
+    "Organization-1093779704": 3662,
+    "Organization-1073574810": 3659,
+    "Organization-1053952606": 3644,
+    "Organization-1760445373": 3628,
+    "Organization-1457403016": 3608,
+    "Organization-1033157821": 3586,
+    "Organization-1700828852": 3552,
+    "Organization-1922445527": 3535,
+    "Organization-1578545273": 3525,
+    "Organization-1295763217": 3477,
+    "Organization-1629307095": 3473,
+    "Organization-1942325154": 3433,
+    "Organization-1235527342": 3413,
+    "Organization-1013967827": 3409,
+    "Organization-1669429577": 3403,
+    "Organization-1124558929": 3396,
+    "Organization-1790043479": 3392,
+    "Organization-1598784555": 3380,
+    "Organization-1780669200": 3364,
+    "Organization-1184786527": 3362,
+    "Organization-1346218294": 3352,
+    "Organization-1689158487": 3343,
+    "Organization-1174282776": 3308,
+    "Organization-1457309650": 3281,
+    "Organization-##########": 3240,
+    "Organization-1013042480": 3185,
+    "Organization-1790265502": 3154,
+    "Organization-1548210198": 3105,
+    "Organization-1952347981": 3104,
+    "Organization-1033138250": 3098,
+    "Organization-1992818256": 3094,
+    "Organization-1225356868": 3051,
+    "Organization-1760488936": 3041,
+    "Organization-1669770004": 3034,
+    "Organization-1225034234": 3022,
+    "Organization-1912909912": 2992,
+    "Organization-1184709057": 2942,
+    "Organization-1144325440": 2937,
+    "Organization-1366409492": 2933,
+    "Organization-1063452381": 2920,
+    "Organization-1093221434": 2900,
+    "Organization-1215989249": 2899,
+    "Organization-1043427248": 2881,
+    "Organization-1861675506": 2870,
+    "Organization-1285684225": 2845
+  },
+  "org_size_distribution": {
+    "101-500": 8869,
+    "11-50": 52555,
+    "1000+": 599,
+    "51-100": 9156,
+    "2-5": 125637,
+    "6-10": 45496,
+    "1": 143491,
+    "501-1000": 1070
+  },
+  "top_50_organizations": [
+    {
+      "id": "Organization-1073606299",
+      "name": "PERMANENTE MEDICAL GROUP INC",
+      "practitioner_count": 20202
+    },
+    {
+      "id": "Organization-1770515280",
+      "name": "SOUTHERN CALIFORNIA PERMANENTE MEDICAL GROUP",
+      "practitioner_count": 13895
+    },
+    {
+      "id": "Organization-1053688572",
+      "name": "NORTH SHORE-LIJ MEDICAL PC",
+      "practitioner_count": 10923
+    },
+    {
+      "id": "Organization-1245845932",
+      "name": "GROW HEALTHCARE GROUP PA",
+      "practitioner_count": 9820
+    },
+    {
+      "id": "Organization-1679525919",
+      "name": "THE CLEVELAND CLINIC FOUNDATION",
+      "practitioner_count": 8826
+    },
+    {
+      "id": "Organization-1285826438",
+      "name": "NEW YORK UNIVERSITY",
+      "practitioner_count": 7989
+    },
+    {
+      "id": "Organization-1619935004",
+      "name": "UNIVERSITY OF PITTSBURGH PHYSICIANS",
+      "practitioner_count": 7210
+    },
+    {
+      "id": "Organization-1922074434",
+      "name": "MAYO CLINIC",
+      "practitioner_count": 6989
+    },
+    {
+      "id": "Organization-1750845863",
+      "name": "SIGNIFY HEALTH MEDICAL ASSOCIATES PLLC",
+      "practitioner_count": 6978
+    },
+    {
+      "id": "Organization-1063525152",
+      "name": "MONTEFIORE MEDICAL CENTER",
+      "practitioner_count": 6656
+    },
+    {
+      "id": "Organization-1023049236",
+      "name": "THE GENERAL HOSPITAL CORPORATION",
+      "practitioner_count": 6506
+    },
+    {
+      "id": "Organization-1801874573",
+      "name": "MASSACHUSETTS GENERAL PHYSICIANS ORGANIZATION INC",
+      "practitioner_count": 6398
+    },
+    {
+      "id": "Organization-1083708226",
+      "name": "ST LUKE'S METHODIST HOSPITAL",
+      "practitioner_count": 6243
+    },
+    {
+      "id": "Organization-1477624104",
+      "name": "UCSF MEDICAL GROUP BUSINESS SERVICES",
+      "practitioner_count": 5767
+    },
+    {
+      "id": "Organization-1962461889",
+      "name": "UNIVERSITY PHYSICIANS INCORPORATED",
+      "practitioner_count": 5653
+    },
+    {
+      "id": "Organization-1245403567",
+      "name": "TELADOC HEALTH MEDICAL GROUP PA",
+      "practitioner_count": 5472
+    },
+    {
+      "id": "Organization-1346235314",
+      "name": "NORTHWESTERN MEDICAL FACULTY FOUNDATION",
+      "practitioner_count": 5466
+    },
+    {
+      "id": "Organization-1497701882",
+      "name": "ENDEAVOR HEALTH MEDICAL GROUP",
+      "practitioner_count": 5443
+    },
+    {
+      "id": "Organization-1861578973",
+      "name": "UNIVERSITY OF CALIFORNIA SAN FRANCISCO",
+      "practitioner_count": 5408
+    },
+    {
+      "id": "Organization-1700824455",
+      "name": "ADVOCATE HEALTH AND HOSPITALS CORPORATION",
+      "practitioner_count": 5299
+    },
+    {
+      "id": "Organization-1023041159",
+      "name": "THE ASSOCIATION OF UNIVERSITY PHYSICIANS",
+      "practitioner_count": 5248
+    },
+    {
+      "id": "Organization-1942270566",
+      "name": "UNIVERSITY OF TEXAS SOUTHWESTERN MEDICAL CENTER AT DALLAS",
+      "practitioner_count": 5248
+    },
+    {
+      "id": "Organization-1396798229",
+      "name": "THE EMORY CLINIC INC",
+      "practitioner_count": 5218
+    },
+    {
+      "id": "Organization-1427271378",
+      "name": "AURORA MEDICAL GROUP INC",
+      "practitioner_count": 5207
+    },
+    {
+      "id": "Organization-1316979834",
+      "name": "SOUTHERN CALIFORNIA PERMANENTE MEDICAL GROUP",
+      "practitioner_count": 5194
+    },
+    {
+      "id": "Organization-1013950807",
+      "name": "SUTTER BAY MEDICAL FOUNDATION",
+      "practitioner_count": 5170
+    },
+    {
+      "id": "Organization-1558097824",
+      "name": "NOURISH INC",
+      "practitioner_count": 5101
+    },
+    {
+      "id": "Organization-1013994359",
+      "name": "FAIRVIEW HEALTH SERVICES",
+      "practitioner_count": 4942
+    },
+    {
+      "id": "Organization-1104202761",
+      "name": "VANDERBILT UNIVERSITY MEDICAL CENTER",
+      "practitioner_count": 4933
+    },
+    {
+      "id": "Organization-1184046187",
+      "name": "MEDSTAR MEDICAL GROUP II LLC",
+      "practitioner_count": 4894
+    },
+    {
+      "id": "Organization-1437292927",
+      "name": "STANFORD HEALTH CARE",
+      "practitioner_count": 4887
+    },
+    {
+      "id": "Organization-1326893777",
+      "name": "IU HEALTH MEDICAL GROUP LLC",
+      "practitioner_count": 4852
+    },
+    {
+      "id": "Organization-1033535497",
+      "name": "BRIGHAM WOMENS PHYSICIANS ORGANIZATION INC",
+      "practitioner_count": 4846
+    },
+    {
+      "id": "Organization-1093768723",
+      "name": "UNIVERSITY OF ALABAMA HEALTH SERVICES FOUNDATION PC",
+      "practitioner_count": 4725
+    },
+    {
+      "id": "Organization-1538151428",
+      "name": "OCHSNER CLINIC LLC",
+      "practitioner_count": 4701
+    },
+    {
+      "id": "Organization-1699720086",
+      "name": "THE MEDICAL COLLEGE OF WISCONSIN INC",
+      "practitioner_count": 4688
+    },
+    {
+      "id": "Organization-1033149844",
+      "name": "CENTRAL DUPAGE PHYSICIAN GROUP",
+      "practitioner_count": 4434
+    },
+    {
+      "id": "Organization-1508390014",
+      "name": "GENERAL HOSPITAL CORP",
+      "practitioner_count": 4368
+    },
+    {
+      "id": "Organization-1366493868",
+      "name": "GEISINGER CLINIC",
+      "practitioner_count": 4365
+    },
+    {
+      "id": "Organization-1922008549",
+      "name": "JOHNS HOPKINS UNIVERSITY",
+      "practitioner_count": 4361
+    },
+    {
+      "id": "Organization-1417907940",
+      "name": "LPCH MEDICAL GROUP DIV OF LUCILE",
+      "practitioner_count": 4331
+    },
+    {
+      "id": "Organization-1497766638",
+      "name": "MULTICARE HEALTH SYSTEM",
+      "practitioner_count": 4275
+    },
+    {
+      "id": "Organization-1548208564",
+      "name": "U S ANESTHESIA PARTNERS OF TEXAS PA",
+      "practitioner_count": 4254
+    },
+    {
+      "id": "Organization-1952320061",
+      "name": "INOVA HEALTH CARE SERVICES",
+      "practitioner_count": 4217
+    },
+    {
+      "id": "Organization-1669499414",
+      "name": "UNIVERSITY HOSPITALS MEDICAL GROUP INC",
+      "practitioner_count": 4209
+    },
+    {
+      "id": "Organization-1205822236",
+      "name": "YALE UNIVERSITY",
+      "practitioner_count": 4132
+    },
+    {
+      "id": "Organization-1487928891",
+      "name": "SCRIPPS HEALTH",
+      "practitioner_count": 4076
+    },
+    {
+      "id": "Organization-1003803032",
+      "name": "WAKE FOREST UNIVERSITY HEALTH SCIENCES",
+      "practitioner_count": 4069
+    },
+    {
+      "id": "Organization-1003878539",
+      "name": "REGENTS OF THE UNIVERSITY OF MICHIGAN",
+      "practitioner_count": 3867
+    },
+    {
+      "id": "Organization-1104334465",
+      "name": "FAY NUTRITION",
+      "practitioner_count": 3851
+    }
+  ],
+  "practitioners_with_endpoint_ref": 0,
+  "chain_completeness": {
+    "full_chain_org_loc_endpoint": 0,
+    "full_chain_pct": 0.0,
+    "org_and_loc_no_endpoint": 2064446,
+    "org_only": 71498,
+    "no_chain": 5305647,
+    "total_practitioners": 7441212
+  },
+  "org_affiliation_network": {
+    "total_records": 439599,
+    "unique_org_hubs": 98179,
+    "hie_hio_org_count": 14549,
+    "member_org_count": 80965,
+    "network_size_distribution": {
+      "1": 69429,
+      "2": 10203,
+      "3": 4464,
+      "4": 2622,
+      "5": 1882,
+      "6": 1376,
+      "7": 992,
+      "8": 794,
+      "9": 661,
+      "10": 587,
+      "11": 418,
+      "12": 357,
+      "13": 328,
+      "14": 277,
+      "15": 272
+    },
+    "top_20_network_hubs": [
+      {
+        "org": "Organization/Organization-3e1a6adf-37c8-4df9-bd6e-3a1ab7f8be49",
+        "member_count": 12086
+      },
+      {
+        "org": "Organization/Organization-59f08fc0-8249-4625-8376-6a0e7c41e379",
+        "member_count": 9915
+      },
+      {
+        "org": "Organization/Organization-517b7d0d-c9e4-4c43-841e-3d3fb7c653ec",
+        "member_count": 3697
+      },
+      {
+        "org": "Organization/Organization-475d17a1-19bf-4f4d-9366-8b2d1a4f7368",
+        "member_count": 3090
+      },
+      {
+        "org": "Organization/Organization-94500fde-2624-4278-8309-15aae1664dcb",
+        "member_count": 2828
+      },
+      {
+        "org": "Organization/Organization-b365db0e-f874-4557-bca4-6ce42b069323",
+        "member_count": 2788
+      },
+      {
+        "org": "Organization/Organization-67510aa2-4535-4d61-9e72-eb2f79cd9282",
+        "member_count": 2752
+      },
+      {
+        "org": "Organization/Organization-adadb06f-3552-4dd4-977a-37f334ee4674",
+        "member_count": 2751
+      },
+      {
+        "org": "Organization/Organization-b3e86fbb-7871-4089-8cf1-33d1ef98ba39",
+        "member_count": 2741
+      },
+      {
+        "org": "Organization/Organization-73ca1571-4e4e-40d8-af2e-ee802baa3de8",
+        "member_count": 2646
+      },
+      {
+        "org": "Organization/Organization-8ecd3e58-54b3-4be9-916c-ea9cb122dcaa",
+        "member_count": 2268
+      },
+      {
+        "org": "Organization/Organization-aead1cb7-0213-4126-bfee-0db14dcbdd7d",
+        "member_count": 2015
+      },
+      {
+        "org": "Organization/Organization-f289ed96-767b-4695-8168-12421a4344f2",
+        "member_count": 1977
+      },
+      {
+        "org": "Organization/Organization-58a67a9b-2954-4b89-949a-58ad3ea8a06c",
+        "member_count": 1329
+      },
+      {
+        "org": "Organization/Organization-2b5e3692-4360-446f-8062-002b3ad434c6",
+        "member_count": 1311
+      },
+      {
+        "org": "Organization/Organization-2eba8d33-a11e-4f79-9d4c-a8fc241782e9",
+        "member_count": 1238
+      },
+      {
+        "org": "Organization/Organization-ffc01eae-f12c-4da7-985f-6bb47e7d0542",
+        "member_count": 1171
+      },
+      {
+        "org": "Organization/Organization-410569df-6611-4db8-b009-4d4aa5d82a7d",
+        "member_count": 1154
+      },
+      {
+        "org": "Organization/Organization-f19e12fc-097f-4f0f-aaab-dcdb2a0e6199",
+        "member_count": 1094
+      },
+      {
+        "org": "Organization/Organization-5ffc954a-a386-4ee4-a83e-4e321aa75667",
+        "member_count": 854
+      }
+    ]
+  },
+  "summary": {
+    "total_practitioners": 7441212,
+    "pct_linked_to_org": 28.7,
+    "pct_linked_to_location": 27.74,
+    "pct_with_endpoint": 0.0,
+    "pct_full_chain": 0.0,
+    "unique_orgs_in_network": 386873,
+    "unique_orgs_with_practitioners": 386873,
+    "analysis_timestamp": "2026-04-18T16:58:13.108570"
+  }
+}
