@@ -1,8 +1,7 @@
 # The CMS National Provider Directory: A Complete Analysis of 27.2 Million Healthcare Records and the Entrepreneurial Opportunity They Represent
 
 **By Trey Rawles**  
-*April 2026*  
-[onhealthcare.manus.space](https://onhealthcare.manus.space)
+*April 2026*
 
 ---
 
@@ -13,6 +12,8 @@ For decades, the United States healthcare system has operated without a single a
 On April 9, 2026, the Centers for Medicare and Medicaid Services (CMS) released the National Provider Directory (NPD) — a single, public, FHIR-formatted dataset containing every Medicare-enrolled provider in the United States. The release, available at [directory.cms.gov](https://directory.cms.gov/), is the most comprehensive public healthcare provider dataset ever assembled. It contains **27,204,567 records** across six FHIR resource types, compressed to 2.8 gigabytes and freely downloadable by anyone.
 
 This essay presents the results of a complete analysis of every record in the dataset — not a sample, not an approximation, but a full population analysis of all 27.2 million records. The analysis was conducted using Python streaming scripts, with the most computationally intensive cross-resource graph linkage analysis run on GitHub Actions cloud infrastructure to avoid local compute constraints. The findings reveal both the extraordinary power of what CMS has released and the significant gaps that remain — gaps that represent direct entrepreneurial opportunities for health technology builders.
+
+Alongside this analysis, a working prototype was built to make the data tangible and interactive: the **CMS NPD Explorer**, available at [onhealthcare.manus.space](https://onhealthcare.manus.space). The application is a six-page React 19 web application built with TypeScript, Tailwind CSS 4, and Recharts, deployed on Manus cloud infrastructure. It was designed with a Federal Data Observatory aesthetic — a deep navy sidebar, Source Serif 4 display typography paired with DM Sans for body text, and a dark-on-light color system that evokes institutional precision rather than consumer-product softness. The site includes an Overview Dashboard displaying all 27.2 million records across the six resource types with live summary statistics; a Practitioners Explorer with searchable and filterable tables across specialty, qualification, gender, and enrollment status; an Organizations Directory with state distribution charts and organizational size breakdowns; a FHIR Endpoints Directory showing EHR vendor market share, endpoint status, and FHIR version distributions; an Analytics Dashboard with six interactive visualizations covering the full dataset; and a Data Model Reference documenting the complete FHIR schema and cross-resource relationship structure. The prototype was built entirely from the raw NPD data — no third-party data enrichment, no commercial provider database — demonstrating that a functional, production-quality provider intelligence application can be built on this public foundation alone.
 
 ---
 
